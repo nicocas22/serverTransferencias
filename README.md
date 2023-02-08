@@ -11,3 +11,5 @@ Usuario de Prueba: 191281217
 Pass: 1234
 
 
+Dejo Archivo env para prueba en ambiente local. Esta practica no se toma encuenta en ambientes de trabajo 
+ya que resulta ser una falla Gravisima de seguridad
