@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const router = (0, express_1.Router)();
+const userRouter = require('../controllers/user/user.routes');
+const transferRouter = require('../controllers/transferencias/transfer.routes');
+const addresseeRouter = require('../controllers/addressee/addressee.routes');
+const bankRouter = require('../controllers/banks/bank.routes');
+router.use('/user', userRouter);
+router.use('/transfer', transferRouter);
+router.use('/addressee', addresseeRouter);
+router.use('/bank', bankRouter);
+module.exports = router;

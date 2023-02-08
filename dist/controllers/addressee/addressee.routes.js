@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const addressee_controller_1 = require("./addressee.controller");
+const router = (0, express_1.Router)();
+const addresseeController = new addressee_controller_1.AddresseeController();
+router.post('/', addresseeController.createAddressee);
+router.get('/searchForAddressee/:rutAddressee', addresseeController.findByRutAddressee);
+router.get('/searchForSender/:idSender', addresseeController.findAll);
+router.delete('/:idAddressee', addresseeController.deleteAddressee);
+router.put('/ïdAddressee', addresseeController.updateAddressee);
+module.exports = router;
