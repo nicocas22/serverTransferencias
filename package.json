@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "servidor para prueba crud MONGO",
   "main": "index.js",
+  "engines": {
+    "node": "16.15.1"
+  },
   "scripts": {
     "build": "tsc ",
     "clean": "rm -rf build",
