@@ -4,13 +4,14 @@
   "description": "servidor para prueba crud MONGO",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc  && npm run tslint",
     "clean": "rm -rf build",
     "start": "npm run build && node dist/index.js",
     "dev": "ts-node-dev src/index.ts",
     "typeorm": "node --require ts-node/register ./node_modelues/typeorm/cli.js",
     "test": "jest",
-    "cli": "ts-node "
+    "cli": "ts-node ",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
   },
   "author": "Nicolas Castillo Soto (nicPic)",
   "license": "ISC",
