@@ -4,7 +4,8 @@
   "description": "servidor para prueba crud MONGO",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --build tsconfig.json",
+    "build:watch": "tsc --build tsconfig.json --watch",
     "start": "tsc && node dist/index.js",
     "dev": "ts-node-dev src/index.ts",
     "typeorm": "node --require ts-node/register ./node_modelues/typeorm/cli.js",
